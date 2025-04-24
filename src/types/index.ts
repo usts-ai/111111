@@ -4,11 +4,41 @@ export interface NavItem {
 }
 
 export interface Product {
-  id: number;
+  id: string;
   name: string;
-  description: string;
+  origin?: string;
+  brand?: string;
+  format?: string;
+  caliber?: string;
+  packaging?: string;
+  unit?: string;
   category: string;
-  image: string;
+  image?: string;
+  description?: string;
+}
+
+export interface ProductCategory {
+  id: string;
+  name: string;
+  description?: string;
+  image?: string;
+}
+
+export interface QuoteRequest {
+  companyName: string;
+  fullName: string;
+  email: string;
+  phone: string;
+  cityPostalCode: string;
+  productCategories: string[];
+  otherProducts?: string;
+  estimatedQuantities: string;
+  packagingRequirements: string;
+  deliveryDate: string;
+  callbackRequested: boolean;
+  preferredCallTime?: string;
+  attachedFile?: File | null;
+  productId?: string; // Optionnel - si la demande concerne un produit spécifique
 }
 
 export interface Testimonial {

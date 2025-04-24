@@ -2,42 +2,42 @@ import { Product, Testimonial, TeamMember, StatItem, HistoryItem, ValueItem } fr
 
 export const products: Product[] = [
   {
-    id: 1,
+    id: "1",
     name: "Gelée de Fruits Rouges Premium",
     description: "Gelée artisanale élaborée à partir de fruits rouges sélectionnés avec soin, parfaite pour accompagner vos desserts gastronomiques.",
     category: "Desserts",
     image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
   },
   {
-    id: 2,
+    id: "2",
     name: "Gelée d'Agrumes Signature",
     description: "Notre gelée d'agrumes signature, aux saveurs intenses et rafraîchissantes, idéale pour les plats de poisson.",
     category: "Accompagnements",
     image: "https://images.unsplash.com/photo-1546548970-71785318a17b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
   },
   {
-    id: 3,
+    id: "3",
     name: "Préparation pour Gelée Professionnelle",
     description: "Préparation technique pour gelées à usage professionnel, garantissant une tenue parfaite et une texture idéale.",
     category: "Ingrédients",
     image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
   },
   {
-    id: 4,
+    id: "4",
     name: "Gelée Décorative Colorée",
     description: "Gamme de gelées décoratives aux couleurs vives et stables, pour sublimer vos créations culinaires avec élégance.",
     category: "Décoration",
     image: "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
   },
   {
-    id: 5,
+    id: "5",
     name: "Cubes de Gelée Aromatisés",
     description: "Cubes de gelée prêts à l'emploi, disponibles en multiples saveurs, pour une utilisation rapide et pratique en restauration.",
     category: "Solutions Prêtes",
     image: "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
   },
   {
-    id: 6,
+    id: "6",
     name: "Gelée Professionnelle Sans Allergènes",
     description: "Formulation spéciale sans allergènes majeurs, adaptée aux établissements servant une clientèle aux besoins alimentaires spécifiques.",
     category: "Spécialités",

@@ -13,6 +13,7 @@ import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/AboutPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import ContactPage from './pages/ContactPage';
+import QuotePage from './pages/QuotePage';
 
 // ScrollToTop component pour réinitialiser le scroll lors du changement de page
 const ScrollToTop: React.FC = () => {
@@ -39,6 +40,7 @@ function App() {
               <Route path="/a-propos" element={<AboutPage />} />
               <Route path="/temoignages" element={<TestimonialsPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/devis" element={<QuotePage />} />
             </Routes>
           </AnimatePresence>
         </main>
