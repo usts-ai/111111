@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +27,11 @@ const Header: React.FC = () => {
     { name: 'Témoignages', path: '/temoignages' },
     { name: 'Contact', path: '/contact' },
   ];
+
+  const handleQuoteRequest = () => {
+    navigate('/devis');
+    setIsMenuOpen(false); // Ferme le menu mobile si ouvert
+  };
 
   return (
     <motion.header 
@@ -78,6 +84,7 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="ml-4 px-4 py-2 bg-[#00AEEF] text-white rounded-md font-medium shadow-md hover:bg-[#0090C5] transition-colors duration-300"
+            onClick={handleQuoteRequest}
           >
             Demander un devis
           </motion.button>
@@ -123,7 +130,10 @@ const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
-              <button className="mt-3 w-full px-4 py-2 bg-[#00AEEF] text-white rounded-md font-medium shadow-md hover:bg-[#0090C5] transition-colors duration-300">
+              <button 
+                className="mt-3 w-full px-4 py-2 bg-[#00AEEF] text-white rounded-md font-medium shadow-md hover:bg-[#0090C5] transition-colors duration-300"
+                onClick={handleQuoteRequest}
+              >
                 Demander un devis
               </button>
             </nav>
